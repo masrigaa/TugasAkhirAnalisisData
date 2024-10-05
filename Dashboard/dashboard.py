@@ -77,7 +77,7 @@ with col2 :
     ax.set_title("Jumlah Penyewaan Sepeda Berdasar Hari", loc="center", fontsize=15)
     ax.set_ylabel(None)
     ax.set_xlabel(None)
-    ax.set_xticks(ticks=range(7), labels=["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"], rotation=45)
+    ax.set_xticks(ticks=range(7), labels=["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"], rotation=45)
     st.pyplot(fig)
 
 st.subheader("Pengaruh Cuaca Terhadap Penyewaan sepeda")
@@ -108,3 +108,10 @@ ax.set_ylabel("Jumlah Penyewa")
 ax.set_xlabel(None)
 ax.set_xticks(ticks=range(3), labels=["low", "Moderate", "High"], rotation=45)
 st.pyplot(fig)
+
+st.title("Kesimpulan Analisis :")
+st.subheader("Bagaimana pola penggunaan sepeda selama satu tahun, dan hari apa yang paling sibuk untuk penggunaan sepeda?")
+st.write("pola penyewaan sepeda bervariasi. Bulan-bulan di musim dingin penggunaan sepeda cenderung menurun,hari kerja cenderung lebih sibuk untuk penggunaan sepeda dibandingkan akhir pekan, dengan puncak penyewaan terjadi pada hari jumat")
+
+st.subheader("Bagaimana pengaruh kondisi cuaca dan kecepatan angin terhadap jumlah penyewaan sepeda?")
+st.write("cuaca yang baik dan angin yang tidak terlalu kencang memiliki dampak positif pada jumlah penyewaan sepeda.")
